@@ -15,6 +15,7 @@ const showToast = (position, toastTitle, toatsMessage, toastType) => {
   pos.value = position
   type.value = toastType
   show.value = true
+  window.mainAPI.toastCounter()
 }
 
 const hideToast = () => {
